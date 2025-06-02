@@ -20,7 +20,7 @@
 
 ## Overview
 
-![screenshot](https://github.com/krish144/Tenzies-Game-Using-React-Js-/blob/main/TenziesGame.png)
+![screenshot](https://github.com/krish144/RestaurantLandingPage/blob/main/assets/img/Restaurant-website-Landing-Page-Design-05-27-2025_05_30_AM.png)
 
 
 ### Built With
