@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant website Landing Page Design</title>
+
+    <!-- Bootstrap CDN  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Custome Style -->
+    <style>
+      .mySwiper {
+        /* Active bullet */
+        --swiper-pagination-color: #ea6d27; /* Change to your desired active color */
+
+        /* Size and spacing */
+        --swiper-pagination-bullet-size: 6px;
+        --swiper-pagination-bullet-horizontal-gap: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ====== Header ====== -->
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container align-items-end">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/img/logo.png" alt="Company logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <div class="d-flex">
+              <button class="custome-btn primary-bg" type="button">
+                Book a Table
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <a href="/">
+        <img
+          src="./assets/img/circles.png"
+          alt="circles for background"
+          class="bg-circles"
+        />
+      </a>
+    </header>
+    <!-- ====== Main ====== -->
+    <main>
+      <!-- Hero Section -->
+      <section id="hero-sec" class="container mb-lg-5">
+        <div class="row align-items-center py-5">
+          <div class="col-lg-6">
+            <div class="d-md-block d-none">
+              <img
+                src="./assets/img/roundedText.png"
+                width="104"
+                alt="roundedText Image"
+              />
+            </div>
+            <h1 class="fw-bold me-lg-5 pe-lg-5 mt-5">
+              We provide the best food for you
+            </h1>
+            <p class="my-3 mb-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <button class="custome-btn me-4 secondary-bg">Menu</button>
+            <button class="custome-btn primary-bg">Book a table</button>
+
+            <div class="social-media-btns mt-5">
+              <a href=""
+                ><img src="./assets/img/facebook.png" alt="facebook icon"
+              /></a>
+              <a href=""
+                ><img src="./assets/img/instagram.png" alt="instagram icon"
+              /></a>
+              <a href=""
+                ><img src="./assets/img/twitter.png" alt="twitter icon"
+              /></a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <img src="./assets/img/heroImg.png" width="100%" alt="hero image" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Dishes Section -->
+      <section id="dishes-sec" class="gray-bg">
+        <div class="container py-5">
+          <div class="position-relative special-dishes">
+            <img
+              src="./assets/img/minit.png"
+              alt="minit"
+              class="minit position-absolute "
+            />
+            <img
+              src="./assets/img/hreb.png"
+              alt="hreb"
+              class="hreb position-absolute d-md-block d-none"
+            />
+            <img
+              src="./assets/img/onion.png"
+              alt="onion"
+              class="onion position-absolute d-md-block d-none"
+            />
+            <img
+              src="./assets/img/singleGarlic.png"
+              alt="singleGarlic"
+              class="single-garlic position-absolute d-md-block d-none"
+            />
+            <img
+              src="./assets/img/Garlic.png"
+              alt="Garlic"
+              class="garlic position-absolute"
+            />
+
+            <h2 class="text-center mt-lg-5">Our Special Dishes</h2>
+            <p class="text-center">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididun
+            </p>
+
+            <div class="dishes-group d-flex flex-md-row flex-column  gap-4 py-5">
+              <div
+                class="dishes-box position-relative mb-mt-0 mb-5 d-flex flex-column justify-content-end"
+              >
+                <div class="position-absolute">
+                  <img src="./assets/img/dish-1.png" alt="Lumpia with Suace" />
+                  <div class="position-absolute">$12</div>
+                </div>
+                <h3>Lumpia with Suace</h3>
+                <p>
+                  Lorem ipsum dolor sit , consectetur adipiscing elit, sed do
+                  eiusmod tempor
+                </p>
+              </div>
+              <div
+                class="dishes-box position-relative  my-md-0 my-5 d-flex flex-column justify-content-end"
+              >
+                <div class="position-absolute">
+                  <img src="/assets/img/dish-2.png" alt="Fish and Veggie" />
+                  <div class="position-absolute">$12</div>
+                </div>
+                <h3>Fish and Veggie</h3>
+                <p>
+                  Lorem ipsum dolor sit , consectetur adipiscing elit, sed do
+                  eiusmod tempor
+                </p>
+              </div>
+              <div
+                class="dishes-box position-relative my-md-0 my-5  d-flex flex-column justify-content-end"
+              >
+                <div class="position-absolute">
+                  <img src="./assets/img/dish-3.png" alt="Tofu Chili" />
+                  <div class="position-absolute">$12</div>
+                </div>
+                <h3>Tofu Chili</h3>
+                <p>
+                  Lorem ipsum dolor sit , consectetur adipiscing elit, sed do
+                  eiusmod tempor
+                </p>
+              </div>
+              <div
+                class="dishes-box position-relative my-md-0 my-5  d-flex flex-column justify-content-end"
+              >
+                <div class="position-absolute">
+                  <img src="./assets/img/dish-4.png" alt="Egg and Cocumber" />
+                  <div class="position-absolute">$12</div>
+                </div>
+                <h3>Egg and Cocumber</h3>
+                <p>
+                  Lorem ipsum dolor sit , consectetur adipiscing elit, sed do
+                  eiusmod tempor
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="row align-items-center position-relative py-5 my-5 welcome-sec"
+          >
+            <img
+              src="./assets/img/coriander.png"
+              alt="coriander"
+              class="w-auto coriander position-absolute d-md-block d-none"
+            />
+            <!-- <img src="./assets/img/hreb.png" alt="hreb" class="hreb w-auto position-absolute"> -->
+            <img
+              src="./assets/img/minit.png"
+              alt="minit"
+              class="minit w-auto position-absolute d-md-block d-none"
+            />
+            <img
+              src="./assets/img/singleGarlic.png"
+              alt="singleGarlic"
+              class="single-garlic w-auto position-absolute d-md-block d-none"
+            />
+            <img
+              src="./assets/img/singleGarlic-2.png"
+              alt="singleGarlic"
+              class="single-garlic-2 w-auto position-absolute "
+            />
+            <img
+              src="./assets/img/CurryLeaves.png"
+              alt="CurryLeaves"
+              class="CurryLeaves w-auto position-absolute d-md-block d-none"
+            />
+            <div class="col-lg-7 mt-lg-5">
+              <img src="./assets/img/dish.png" width="100%" alt="hero image" />
+            </div>
+            <div class="col-lg-5 mt-lg-5">
+              <h2 class="fw-bold me-lg-5 pe-lg-5 mt-5">
+                Wecome to Our Restaurant
+              </h2>
+              <p class="my-3 mb-5">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <button class="custome-btn me-4 secondary-bg">Menu</button>
+              <button class="custome-btn primary-bg">Book a table</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Chef Section -->
+      <section id="chef-sec" class="container py-5 position-relative">
+        <img
+          src="./assets/img/Garlic.png"
+          alt="garlic"
+          class="garlic position-absolute d-md-block d-none"
+        />
+        <img
+          src="./assets/img/singleGarlic.png"
+          alt="singleGarlic"
+          class="single-garlic position-absolute d-md-block w-full d-none"
+        />
+        <div class="row align-items-center py-5">
+          <div class="col-lg-6">
+            <h2 class="fw-bold">Our Expects Chef</h2>
+            <p class="my-3 mb-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+
+            <ul class="row g-3 ps-0 my-3 mb-5 ms-0" style="list-style: none">
+              <li class="col-lg-6">
+                <span class="d-flex align-items-start"
+                  ><img
+                    src="./assets/img/check.png"
+                    alt="check image for list"
+                  />
+                  <span class="ps-2"
+                    >Lorem ipsum dolor sit amet, consectetur</span
+                  ></span
+                >
+              </li>
+              <li class="col-lg-6">
+                <span class="d-flex align-items-start"
+                  ><img
+                    src="./assets/img/check.png"
+                    alt="check image for list"
+                  />
+                  <span class="ps-2"
+                    >Lorem ipsum dolor sit amet, consectetur</span
+                  ></span
+                >
+              </li>
+              <li class="col-lg-6">
+                <span class="d-flex align-items-start"
+                  ><img
+                    src="./assets/img/check.png"
+                    alt="check image for list"
+                  />
+                  <span class="ps-2"
+                    >Lorem ipsum dolor sit amet, consectetur</span
+                  ></span
+                >
+              </li>
+              <li class="col-lg-6">
+                <span class="d-flex align-items-start"
+                  ><img
+                    src="./assets/img/check.png"
+                    alt="check image for list"
+                  />
+                  <span class="ps-2"
+                    >Lorem ipsum dolor sit amet, consectetur</span
+                  ></span
+                >
+              </li>
+              <li class="col-lg-6">
+                <span class="d-flex align-items-start"
+                  ><img
+                    src="./assets/img/check.png"
+                    alt="check image for list"
+                  />
+                  <span class="ps-2"
+                    >Lorem ipsum dolor sit amet, consectetur</span
+                  ></span
+                >
+              </li>
+              <li class="col-lg-6">
+                <span class="d-flex align-items-start"
+                  ><img
+                    src="./assets/img/check.png"
+                    alt="check image for list"
+                  />
+                  <span class="ps-2"
+                    >Lorem ipsum dolor sit amet, consectetur</span
+                  ></span
+                >
+              </li>
+            </ul>
+
+            <button class="custome-btn me-4 secondary-bg">Menu</button>
+            <button class="custome-btn primary-bg">Book a table</button>
+          </div>
+          <div class="col-lg-6 mt-md-0 mt-5 text-center">
+            <img
+              src="./assets/img/chef.png"
+              width="100%"
+              height="100%"
+              alt="chef"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+
+      <section id="testimonials-sec" class="gray-bg pt-5 position-relative">
+        <img
+          src="./assets/img/pan.png"
+          alt="pan.png"
+          class="position-absolute pan"
+        
+        />
+        <h2 class="text-center mt-lg-5">Our Happy Customers</h2>
+        <p class="text-center">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt
+        </p>
+        <swiper-container
+          class="mySwiper mt-lg-5"
+          pagination="true"
+          pagination-clickable="true"
+          slides-per-view="auto"
+          centered-slides="true"
+          space-between="30"
+          auto
+        >
+          <swiper-slide>
+            <div
+              class="testimonial-box position-relative d-flex flex-column justify-content-end"
+            >
+              <div class="position-absolute">
+                <img src="./assets/img/person-1.png" alt="Lumpia with Suace" />
+              </div>
+              <img
+                src="./assets//img/Stars.png"
+                alt="Stars"
+                class="stars"
+                width="auto"
+              />
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Tortor massa nisl quam
+                sit. Vitae congue ultrices neque penatibus mi in quisque. Leo in
+                cursus enim magnis ante. Proin iaculis platea ipsum sagittis ac
+                eu aliquam quis. Ornare tincidunt tempus semper
+              </p>
+              <h3 class="fw-bold">Ama Ampomah</h3>
+              <p>CEO & Founder Inc</p>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div
+              class="testimonial-box position-relative d-flex flex-column justify-content-end"
+            >
+              <div class="position-absolute">
+                <img src="./assets/img/person-2.png" alt="Lumpia with Suace" />
+              </div>
+              <img
+                src="./assets//img/Stars.png"
+                alt="Stars"
+                class="stars"
+                width="auto"
+              />
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Tortor massa nisl quam
+                sit. Vitae congue ultrices neque penatibus mi in quisque. Leo in
+                cursus enim magnis ante. Proin iaculis platea ipsum sagittis ac
+                eu aliquam quis. Ornare tincidunt tempus semper
+              </p>
+              <h3 class="fw-bold">Ama Ampomah</h3>
+              <p>CEO & Founder Inc</p>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div
+              class="testimonial-box position-relative d-flex flex-column justify-content-end"
+            >
+              <div class="position-absolute">
+                <img src="./assets/img/person-1.png" alt="Lumpia with Suace" />
+              </div>
+              <img
+                src="./assets//img/Stars.png"
+                alt="Stars"
+                class="stars"
+                width="auto"
+              />
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Tortor massa nisl quam
+                sit. Vitae congue ultrices neque penatibus mi in quisque. Leo in
+                cursus enim magnis ante. Proin iaculis platea ipsum sagittis ac
+                eu aliquam quis. Ornare tincidunt tempus semper
+              </p>
+              <h3 class="fw-bold">Ama Ampomah</h3>
+              <p>CEO & Founder Inc</p>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div
+              class="testimonial-box position-relative d-flex flex-column justify-content-end"
+            >
+              <div class="position-absolute">
+                <img src="./assets/img/person-1.png" alt="Lumpia with Suace" />
+              </div>
+              <img
+                src="./assets//img/Stars.png"
+                alt="Stars"
+                class="stars"
+                width="auto"
+              />
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Tortor massa nisl quam
+                sit. Vitae congue ultrices neque penatibus mi in quisque. Leo in
+                cursus enim magnis ante. Proin iaculis platea ipsum sagittis ac
+                eu aliquam quis. Ornare tincidunt tempus semper
+              </p>
+              <h3 class="fw-bold">Ama Ampomah</h3>
+              <p>CEO & Founder Inc</p>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div
+              class="testimonial-box position-relative d-flex flex-column justify-content-end"
+            >
+              <div class="position-absolute">
+                <img src="./assets/img/person-1.png" alt="Lumpia with Suace" />
+              </div>
+              <img
+                src="./assets//img/Stars.png"
+                alt="Stars"
+                class="stars"
+                width="auto"
+              />
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Tortor massa nisl quam
+                sit. Vitae congue ultrices neque penatibus mi in quisque. Leo in
+                cursus enim magnis ante. Proin iaculis platea ipsum sagittis ac
+                eu aliquam quis. Ornare tincidunt tempus semper
+              </p>
+              <h3 class="fw-bold">Ama Ampomah</h3>
+              <p>CEO & Founder Inc</p>
+            </div>
+          </swiper-slide>
+       
+        </swiper-container>
+
+        <!-- Newsletter -->
+        <div>
+          <div class="cta-box mx-auto text-center p-5 d-grid">
+            <h2 class="text-white">
+              Get Or Promo Code by Subscribing To our Newsletter
+            </h2>
+            <div class="position-relative">
+              <input type="text" placeholder="Enter your email" />
+              <button class="submit-btn">Submit</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ====== Footer ====== --> 
+    <footer id="footer-sec" class="position-relative overflow-hidden" >
+         <img
+          src="./assets/img/pan.png"
+          alt="pan.png"
+          class="position-absolute w-full pan"
+         
+        />
+      <div class="d-flex flex-md-row flex-column gap-5 container footer-description " >
+        <div class="">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/img/logo.png" alt="Company logo" />
+          </a>
+          <p class="py-3 lh-lg">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore .
+            <a href="/" class="text-decoration-underline text-black"
+              >Learn more</a
+            >
+          </p>
+
+          <h4 class="fs-6 fw-bold">OPENING HOURS</h4>
+
+          <table class="mt-4" >
+            <thead>
+              <tr>
+                <td>Monday - Friday</td>
+                <td>Saturday</td>
+                <td>Saturday</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>8:00 am to 9:00 pm</td>
+                <td>8:00 am to 9:00 pm</td>
+                <td>CLOSED</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+          <div class="flex-fill d-flex">
+        <div class="flex-fill">
+          <h3 class="fs-6 fw-bold">Navigation</h3>
+          <ul>
+            <li>Menu</li>
+            <li>About us</li>
+            <li>Contact us</li>
+            <li>Main dishes</li>
+          </ul>
+        </div>
+        <div class="flex-fill">
+          <h3 class="fs-6 fw-bold">DISHES</h3>
+          <ul>
+            <li>Fish & Viggies</li>
+            <li>Tofu Chili</li>
+            <li>Egg & Cocumber</li>
+            <li>Lumpia w/Suace</li>
+          </ul>
+        </div>
+        </div>
+        <div class="flex-fill">
+          <h3 class="fs-6 fw-bold">FOLLOW US</h3>
+          <div class="social-media-btns mt-4">
+            <a href=""
+              ><img src="./assets/img/facebook.png" alt="facebook icon"
+            /></a>
+            <a href=""
+              ><img src="./assets/img/instagram.png" alt="instagram icon"
+            /></a>
+            <a href=""
+              ><img src="./assets/img/twitter.png" alt="twitter icon"
+            /></a>
+          </div>
+        </div>
+     
+      </div>
+      <div class="border-top mt-md-5 mt-3">
+        <div class="d-flex justify-content-between flex-md-row flex-column-reverse text-center align-items-center container pt-md-5 pt-3">
+        <p class="p-0 m-0">&copy; 2022 Restaurants. All Right Reserved. Designed by Isaac</p>
+        <ul class="d-flex gap-3 m-0">
+          <li>Terms of Service</li>
+          <li>Privacy Policy</li>
+        </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap CDN  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Swiper CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  </body>
+</html>
